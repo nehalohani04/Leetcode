@@ -26,13 +26,13 @@ class Solution {
     int j = 0;
 
     while (j < n) {
-      while (j < n && s[j] == ' ')  // Skip spaces
+      while (j < n && s[j] == ' ')  
         ++j;
-      while (j < n && s[j] != ' ')  // Keep non spaces
+      while (j < n && s[j] != ' ')  
         s[i++] = s[j++];
-      while (j < n && s[j] == ' ')  // Skip spaces
+      while (j < n && s[j] == ' ')  
         ++j;
-      if (j < n)  // Keep only one space
+      if (j < n) 
         s[i++] = ' ';
     }
 
